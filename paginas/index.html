@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarcoCerto</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1><b>M</b>arco<b>C</b>erto</h1>
+    </header>
+    <!--<div id="linhaNav" onmouseover="mostrarNav()" onmouseout="esconderNav()">
+        <nav id="abaNav">
+            <ul>
+                <li>Ínicio</li>
+            </ul>
+        </nav>
+    </div>-->
+    <nav id="abaNav">
+        <ul>
+            <li><a href="#">Ínicio</a>
+            <li><a href="#">Mais</a>
+            <li><a href="#">Contato</a>
+        </ul>
+    </nav>
+    <script>
+        function mostrarNav(){
+            var abaNav = document.getElementById('abaNav');
+            var linha = document.getElementById('linhaNav');
+            abaNav.style.display = 'block';
+            linha.style.height = 'auto';
+        }
+        function esconderNav(){
+            var abaNav = document.getElementById('abaNav');
+            var linha = document.getElementById('linhaNav');
+            abaNav.style.display = 'none';
+            linha.style.height = '4px';
+        }
+    </script>
+</body>
+</html>

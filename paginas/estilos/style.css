@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*Raíz*/
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    :root{
+        --FonteBase: "Kanit", sans-serif;
+        --CorBase: #ffffff;
+        --CorBase2: #ffff90;
+        --CorDestaque: #a5113d;
+        --CorDestaque2: #ee7694;
+        --CorInvertida: #07022e;
+    }
+
+/*Geral*/
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+    body{
+        background-color: var(--CorInvertida);
+    }
+
+/*Caixas Grandes*/
+    header{
+        background-image: linear-gradient(to right, var(--CorDestaque), var(--CorDestaque2));
+        color: var(--CorBase);
+        padding: 40px;
+        text-align: center;
+    }
+    header h1{
+        font-family: var(--FonteBase);
+        font-size: 50px;
+    }
+    nav{
+        background-image: linear-gradient(to right, var(--CorDestaque), var(--CorDestaque2));
+        color: var(--CorBase);
+        display: block;
+    }
+
+/*Caixas Menores*/
+    a{
+        color: var(--CorBase);
+        text-decoration: none;
+    }
+    b{
+        color: var(--CorBase2);
+        font-size: 50px;
+    }
+    li{
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        transition-duration: .5s;
+    }
+    ul{
+        columns: 3;
+        list-style-type: none;
+    }
+
+/*IDs e Classes*/
+    #linhaNav{
+        background-color: var(--CorDestaque);
+        color: var(--CorBase);
+        height: 4px;
+    }
+
+/*Ações e Animações*/
+    li:hover{
+        background-color: var(--CorDestaque2);
+        color: var(--CorBase);
+    }
